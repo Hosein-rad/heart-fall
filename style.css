@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.heart {
+    height: -100vh;
+    font-size: 40px;
+    animation: fall 3s linear forwards;
+    position: fixed;
+    cursor: grab;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-55vh);
+    }
+    to {
+        transform: translateY(55vh);
+    }
+}
